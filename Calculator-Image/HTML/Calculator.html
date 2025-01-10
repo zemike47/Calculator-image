@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator-Image/CSS/style.css" />
+    <script src="/Calculator-Image/Javascript/Calculator.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Calculator-Image</h1>
+    <div class="main">
+      <div class="numbers">
+        <img
+          id="1"
+          src="/Calculator-Image/assets/images-kids.jpg"
+          alt="image_fruits"
+          usemap="#CalculatorMap"
+        />
+
+        <map name="CalculatorMap">
+          <area shape="rect" coords="78,80,184,220" href="#" onclick="J" />
+          <area
+            shape="rect"
+            coords="202,101,309,245"
+            href="#"
+            onclick="Calculator(2)"
+          />
+          <area
+            shape="rect"
+            coords="339,66,446,210"
+            href="#"
+            onclick="Calculator(3)"
+          />
+          <area
+            shape="rect"
+            coords="465,149,572,293"
+            href="#"
+            onclick="Calculator(4)"
+          />
+          <area
+            shape="rect"
+            coords="599,112,706,256"
+            href="#"
+            onclick="Calculator(5)"
+          />
+          <area
+            shape="rect"
+            coords="37,284,144,428"
+            href="#"
+            onclick="Calculator(6)"
+          />
+          <area
+            shape="rect"
+            coords="175,273,282,417"
+            href="#"
+            onclick="Calculator(7)"
+          />
+          <area
+            shape="rect"
+            coords="311,316,418,460"
+            href="#"
+            onclick="Calculator(8)"
+          />
+          <area
+            shape="rect"
+            coords="444,301,540,418"
+            href="#"
+            onclick="Calculator(9)"
+          />
+          <area
+            shape="rect"
+            coords="571,293,678,416"
+            href="#"
+            onclick="Calculator(0)"
+          />
+        </map>
+      </div>
+
+      <div class="OperatorsAndResult">
+        <h2>Operators</h2>
+        <img
+          id="2"
+          src="/Calculator-Image/assets/mathOpretors.jpeg"
+          alt="mathOpretors"
+          usemap="#mathOpretors"
+        />
+
+        <div id="result">0</div>
+      </div>
+
+      <map name="mathOpretors">
+        <area
+          shape="rect"
+          coords="67,78,113,54"
+          href="#"
+          onclick="Calculator('-')"
+        />
+        <area
+          shape="rect"
+          coords="42,149,109,86"
+          href="#"
+          onclick="Calculator('*')"
+        />
+        <area
+          shape="rect"
+          coords="104,183,167,125"
+          href="#"
+          onclick="Calculator('/')"
+        />
+        <area
+          shape="rect"
+          coords="126,91,189,33"
+          href="#"
+          onclick="Calculator('+')"
+        />
+        <area
+          shape="rect"
+          coords="163,130,217,93"
+          href="#"
+          onclick="Calculator('=')"
+        />
+      </map>
+    </div>
+  </body>
+</html>
